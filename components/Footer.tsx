@@ -19,7 +19,7 @@ const Footer = (props: Props) => {
           <Image
             src={Logow}
             alt="Logo"
-            className="h-12 w-auto relativebg-black"
+            className="h-12 w-auto relative cursor-pointer hover:scale-105 duration-300 transition-all"
             height={40}
             width={40}
           />

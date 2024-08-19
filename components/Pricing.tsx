@@ -1,6 +1,8 @@
+"use client";
 import { CheckCircle } from "lucide-react";
 import React from "react";
 import { twMerge } from "tailwind-merge";
+import { motion } from "framer-motion";
 
 type Props = {};
 
@@ -93,9 +95,19 @@ const Pricing = (props: Props) => {
                   </h3>
                   {popular === true && (
                     <div className="inline-flex text-sm px-4 py-1.5 rounded-xl border border-white/20">
-                      <span className="bg-[linear-gradient(to_right,#DD7DDF,#E1CD86,#bbcb92,#71C2EF,#3bffff,#DD7DDF)] text-transparent bg-clip-text font-medium">
+                      <motion.span
+                        animate={{
+                          backgroundPositionX: "-100%",
+                        }}
+                        transition={{
+                          duration: 2,
+                          repeat: Infinity,
+                          ease: "linear",
+                          repeatType: "loop",
+                        }}
+                        className="bg-[linear-gradient(to_right,#DD7DDF,#E1CD86,#bbcb92,#71C2EF,#3bffff,#DD7DDF,#E1CD86,#bbcb92,#71C2EF,#3bffff)] [background-size:200%] text-transparent bg-clip-text font-medium">
                         Popular
-                      </span>
+                      </motion.span>
                     </div>
                   )}
                 </div>
