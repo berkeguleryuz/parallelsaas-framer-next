@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { Inter_Tight } from "next/font/google";
+import { Arimo } from "next/font/google";
 import "./globals.css";
 import { twMerge } from "tailwind-merge";
 
-const fonts = Inter_Tight({ subsets: ["latin"], weight: "400" });
+const fonts = Arimo({ subsets: ["latin"], weight: "400" });
 
 export const metadata: Metadata = {
   title: "Clodron Parallel SaaS",

@@ -9,8 +9,8 @@ type Props = {};
 
 const Nav = (props: Props) => {
   return (
-    <header className="sticky top-0">
-      <div className="flex group  justify-center items-center py-3 bg-black text-white gap-3 text-sm">
+    <header className="sticky top-0 backdrop-blur-sm z-20">
+      <div className="flex group justify-center items-center py-3 bg-black text-white gap-3 text-sm">
         <p className="text-white/60 hidden md:block">
           Streamline your workflow and take your business to the next level.
         </p>
@@ -31,12 +31,22 @@ const Nav = (props: Props) => {
               className="cursor-pointer hover:scale-105 duration-300 transition-all"
             />
             <RxHamburgerMenu className="h-5 w-5 md:hidden" />
-            <nav className="hidden md:flex gap-6 text-black/60 items-center">
-              <Link href={"#"}>About</Link>
-              <Link href={"#"}>Features</Link>
-              <Link href={"#"}>Customers</Link>
-              <Link href={"#"}>Updates</Link>
-              <Link href={"#"}>Help</Link>
+            <nav className="hidden md:flex gap-6 text-black/70 font-black items-center">
+              <Link href={"#"} className="hover:text-black">
+                About
+              </Link>
+              <Link href={"#"} className="hover:text-black">
+                Features
+              </Link>
+              <Link href={"#"} className="hover:text-black">
+                Customers
+              </Link>
+              <Link href={"#"} className="hover:text-black">
+                Updates
+              </Link>
+              <Link href={"#"} className="hover:text-black">
+                Help
+              </Link>
               <button className="bg-black text-white px-4 py-2 rounded-lg font-medium inline-flex items-center justify-center tracking-tight">
                 Get for free
               </button>
