@@ -1,4 +1,5 @@
 import AnimatedLogos from "@/components/AnimatedLogos";
+import CallToAction from "@/components/CallToAction";
 import Features from "@/components/Features";
 import Hero from "@/components/Hero";
 import Nav from "@/components/Nav";
@@ -14,6 +15,7 @@ export default function Home() {
       <Features />
       <Pricing />
       <Testimonials />
+      <CallToAction />
     </main>
   );
 }

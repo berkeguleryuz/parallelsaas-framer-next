@@ -58,9 +58,9 @@ const pricingTiers = [
 
 const Pricing = (props: Props) => {
   return (
-    <section className="py-24">
+    <section className="py-24 bg-white">
       <div className="container">
-        <h2 className="text-center md:text-[54px] md:leading-[60px] text-3xl font-bold tracking-tighter bg-gradient-to-b from-black to-[#0c20b4] text-transparent bg-clip-text">
+        <h2 className="text-center md:text-[54px] md:leading-[62px] text-3xl font-bold tracking-tighter bg-gradient-to-b from-black to-[#0c20b4] text-transparent bg-clip-text">
           Pricing
         </h2>
         <p className="text-center text-[22px] leading-[30px] tracking-tight text-[#010D0E] mt-5 max-w-[540px] mx-auto">
