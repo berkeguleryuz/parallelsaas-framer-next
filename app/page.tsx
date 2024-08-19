@@ -1,6 +1,7 @@
 import AnimatedLogos from "@/components/AnimatedLogos";
 import CallToAction from "@/components/CallToAction";
 import Features from "@/components/Features";
+import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import Nav from "@/components/Nav";
 import Pricing from "@/components/Pricing";
@@ -16,6 +17,7 @@ export default function Home() {
       <Pricing />
       <Testimonials />
       <CallToAction />
+      <Footer />
     </main>
   );
 }
